@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://TextEdit.gd" type="Script" id=1]
+
+[node name="TextEdit" type="Control"]
+margin_right = 200.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 200, 20 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_right = 200.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 200, 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="."]
+margin_top = 30.0
+margin_right = 200.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 200, 20 )
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="text_changed" from="TextEdit" to="." method="_on_TextEdit_text_changed"]
