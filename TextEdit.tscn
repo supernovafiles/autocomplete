@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://TextEdit.gd" type="Script" id=1]
+[ext_resource path="res://PressStart2P-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+font_data = ExtResource( 2 )
 
 [node name="TextEdit" type="Control"]
 margin_right = 200.0
@@ -15,15 +20,17 @@ __meta__ = {
 margin_right = 200.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 200, 30 )
+custom_fonts/font = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBox" type="VBoxContainer" parent="."]
+margin_left = -100.0
 margin_top = 30.0
-margin_right = 200.0
+margin_right = 300.0
 margin_bottom = 50.0
-rect_min_size = Vector2( 200, 20 )
+rect_min_size = Vector2( 400, 20 )
 size_flags_vertical = 3
 __meta__ = {
 "_edit_use_anchors_": false
